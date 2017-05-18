@@ -22,10 +22,11 @@ namespace 验证码小程序
         {
             GenerateVCode();
         }
-
+        //全局变量s用于后续比较
+        static string s = null;
         private void GenerateVCode()
         {
-            string s = null;
+            s = null;
             Random r = new Random();
             //生成五个随机数
             for (int i = 0; i < 5; i++)
@@ -61,12 +62,21 @@ namespace 验证码小程序
             }
             //将bmp插入picturebox
             pbVCode.Image = bmp;
+            
         }
 
         //点击确定比较
         private void btConfirm_Click(object sender, EventArgs e)
         {
-
+            if (tbInput.Text==s)
+            {
+                MessageBox.Show("眼神儿不错~");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("不对，再仔细看看");
+            }
         }
     }
 }
