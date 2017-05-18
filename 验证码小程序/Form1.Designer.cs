@@ -39,18 +39,17 @@
             // 
             this.pbVCode.Location = new System.Drawing.Point(232, 91);
             this.pbVCode.Name = "pbVCode";
-            this.pbVCode.Size = new System.Drawing.Size(165, 42);
+            this.pbVCode.Size = new System.Drawing.Size(136, 42);
             this.pbVCode.TabIndex = 0;
             this.pbVCode.TabStop = false;
             // 
             // tbInput
             // 
             this.tbInput.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tbInput.Location = new System.Drawing.Point(249, 171);
+            this.tbInput.Location = new System.Drawing.Point(232, 171);
             this.tbInput.Name = "tbInput";
-            this.tbInput.Size = new System.Drawing.Size(92, 34);
+            this.tbInput.Size = new System.Drawing.Size(109, 34);
             this.tbInput.TabIndex = 1;
-            this.tbInput.Text = "12345";
             // 
             // btConfirm
             // 
@@ -61,12 +60,13 @@
             this.btConfirm.TabIndex = 2;
             this.btConfirm.Text = "确定";
             this.btConfirm.UseVisualStyleBackColor = true;
+            this.btConfirm.Click += new System.EventHandler(this.btConfirm_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(403, 91);
+            this.button1.Location = new System.Drawing.Point(383, 91);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 42);
             this.button1.TabIndex = 3;
