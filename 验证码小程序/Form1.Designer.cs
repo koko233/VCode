@@ -84,7 +84,7 @@
             this.Controls.Add(this.tbInput);
             this.Controls.Add(this.pbVCode);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "验证码";
             ((System.ComponentModel.ISupportInitialize)(this.pbVCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

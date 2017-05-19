@@ -47,7 +47,7 @@ namespace 验证码小程序
             }
 
             //绘制干扰线
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 30; i++)
             {
                 Point p1 = new Point(r.Next(0, bmp.Width), r.Next(0, bmp.Height));
                 Point p2 = new Point(r.Next(0, bmp.Width), r.Next(0, bmp.Height));
@@ -55,7 +55,7 @@ namespace 验证码小程序
             }
 
             //绘制干扰点
-            for (int i = 0; i < 500; i++)
+            for (int i = 0; i < 800; i++)
             {
                 Point p = new Point(r.Next(0, bmp.Width), r.Next(0, bmp.Height));
                 bmp.SetPixel(p.X, p.Y, Color.Black);
